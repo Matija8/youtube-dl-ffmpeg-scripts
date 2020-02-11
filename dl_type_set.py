@@ -18,7 +18,7 @@ def main():
         video_format = '22'
         audio_format = '140'
 
-        command = f"youtube-dl -f {video_format}+{audio_format} {URL} -o %(title)s.%(ext)s".split()
+        command = f"youtube-dl -f {video_format}+{audio_format} {URL} -ciw -o %(title)s.%(ext)s".split()
         start = time.time()
         print(f"Getting video from url: {URL}")
         try:
